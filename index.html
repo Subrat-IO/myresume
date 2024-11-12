@@ -29,17 +29,16 @@
     }
 
     section {
-      padding: 60px 20px;
-      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 20px;
       border-radius: 10px;
       margin-bottom: 30px;
       transition: all 0.4s ease-in-out;
       opacity: 0;
       transform: translateY(30px);
+      background: linear-gradient(145deg, #fff, #f0f0f0);
     }
 
     section:hover {
-      background: #e3f2fd;
       transform: translateY(-10px);
     }
 
@@ -52,10 +51,11 @@
     }
 
     .profile-img {
-      float: left;
-      width: 25%;
-      margin-right: 20px;
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto 20px auto;
       border-radius: 10px;
+      display: block;
     }
 
     /* Social icons */
@@ -63,7 +63,6 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-top: 20px;
       font-size: 30px;
     }
 
@@ -113,8 +112,26 @@
     }
 
     footer:hover {
-      background: #e3f2fd;
       transform: translateY(-10px);
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .profile-img {
+        width: 50%; /* Ensuring the image scales well on mobile */
+      }
+
+      section {
+        padding: 20px 10px; /* Reduced padding on smaller screens */
+      }
+
+      .social-icons {
+        flex-direction: column; /* Stack social icons vertically */
+      }
+
+      .social-icons a {
+        font-size: 24px; /* Smaller icons on mobile */
+      }
     }
 
     /* Scroll to appear effect */
@@ -153,34 +170,28 @@
   <div class="container my-5">
     <!-- About Section -->
     <section class="about-section">
-      <img src="WhatsApp Image 2024-11-11 at 16.58.48.jpeg" alt="Subrat Sethi" class="profile-img">
+      <img src="/home/subrat/Downloads/WhatsApp Image 2024-11-11 at 16.58.48.jpeg" alt="Subrat Sethi" class="profile-img">
       <h1>Subrat Sethi</h1>
-      <p class="lead">Web Developer with expertise in front-end and back-end technologies, including HTML, CSS, JavaScript, Bootstrap, React, Node.js, Express, MongoDB, and MySQL. Experienced in designing user-friendly, responsive websites that drive engagement and conversions. Skilled in building robust APIs and ensuring seamless performance and scalability. Passionate about staying current with emerging trends to deliver high-quality, client-focused web solutions and with various web development frameworks.
-        Experienced in implementing effective SEO strategies and optimizing website performance.</p>
-      <p style="margin-left: 290px;"><strong>Location:</strong> Pin- 761118</p>
-      <p style="margin-left: 290px;"><strong>Mobile:</strong> +91-6372269905, +91-9439521899</p>
-      <p style="margin-left: 290px;"><strong>Email:</strong> <a href="mailto:subratsethi501@gmail.com" class="text-dark">subratsethi501@gmail.com</a></p>
-      <p style="margin-left: 290px;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subratsethi" class="text-dark"
-          target="_blank">My Profile</a></p>
+      <p class="lead">Web Developer with expertise in front-end and back-end technologies, including HTML, CSS, JavaScript, Bootstrap, React, Node.js, Express, MongoDB, and MySQL. Experienced in designing user-friendly, responsive websites that drive engagement and conversions. Skilled in building robust APIs and ensuring seamless performance and scalability. Passionate about staying current with emerging trends to deliver high-quality, client-focused web solutions and with various web development frameworks. Experienced in implementing effective SEO strategies and optimizing website performance.</p>
+      <p><strong>Location:</strong> Pin- 761118</p>
+      <p><strong>Mobile:</strong> +91-6372269905, +91-9439521899</p>
+      <p><strong>Email:</strong> <a href="mailto:subratsethi501@gmail.com" class="text-dark">subratsethi501@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subratsethi" class="text-dark" target="_blank">My Profile</a></p>
 
       <!-- Social Media Icons -->
-      <div class="social-icons" style="margin-left: 150px;">
+      <div class="social-icons">
         <a href="https://www.facebook.com/subratroy.subrat.18/" target="_blank" class="fab fa-facebook"></a>
         <a href="https://www.instagram.com/undefined_soul_0302/" target="_blank" class="fab fa-instagram"></a>
         <a href="https://www.linkedin.com/in/subrat-sethi-941b17217/" target="_blank" class="fab fa-linkedin"></a>
         <a href="https://github.com/Subrat-IO" target="_blank" class="fab fa-github"></a>
-        <a href="https://api.whatsapp.com/send?phone=+916372269905&text=%20Hello" target="_blank" class="fab fa-whatsapp" style="font-size: 30px; color: #000000;"></a>
-
+        <a href="https://api.whatsapp.com/send?phone=+916372269905&text=%20Hello" target="_blank" class="fab fa-whatsapp"></a>
       </div>
     </section>
 
     <!-- Objective Section -->
     <section>
       <h2>Objective</h2>
-      <p>Dynamic and results-driven Web Developer with a strong background in both front-end and back-end technologies.
-        Proven ability to design, develop, and maintain user-friendly, responsive websites that enhance user experience
-        and drive engagement. Skilled in HTML, CSS, JavaScript, and various web development frameworks. Experienced in
-        implementing effective SEO strategies and optimizing website performance.</p>
+      <p>Dynamic and results-driven Web Developer with a strong background in both front-end and back-end technologies. Proven ability to design, develop, and maintain user-friendly, responsive websites that enhance user experience and drive engagement. Skilled in HTML, CSS, JavaScript, and various web development frameworks. Experienced in implementing effective SEO strategies and optimizing website performance.</p>
     </section>
 
     <!-- Education Section -->
